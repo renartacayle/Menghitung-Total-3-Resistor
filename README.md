@@ -3,84 +3,88 @@
 
 ## README (English)
 
-### Ohm’s Law Calculator – C++ Console Program
+### Three-Resistor Total Calculator – C++ Console Program
 
-This small console program helps you calculate one of the three basic electrical quantities in Ohm’s Law:
+This console program calculates the total resistance of three resistors either in **series** or **parallel**.
 
-* **Voltage (V)**
-* **Current (I)**
-* **Resistance (R)**
+### Formula
 
-by using the classic formula:
+* **Series**:
 
-```
-V = I × R
-```
+  ```
+  R_total = R1 + R2 + R3
+  ```
+* **Parallel**:
 
-### How It Works
+  ```
+  1/R_total = 1/R1 + 1/R2 + 1/R3
+  ```
+
+### How to Use
 
 1. Run the program.
-2. Choose what you want to calculate:
+2. Enter the three resistor values (R1, R2, R3) in ohms when prompted.
+3. Choose the mode:
 
-   * 1 → Voltage (V)
-   * 2 → Current (I)
-   * 3 → Resistance (R)
-3. Enter the two known values when prompted.
-4. The program prints the result.
+   * `1` → Series
+   * `2` → Parallel
+4. The program prints the total resistance.
 
 ### Requirements
 
-* C++ compiler (e.g. g++, clang++, MSVC)
-* Any OS that supports a C++ toolchain
+* C++ compiler (g++, clang++, MSVC, etc.)
+* Any OS with a C++ toolchain
 
 ### Compile & Run
 
 ```bash
-g++ -o ohm_calculator main.cpp
-./ohm_calculator
+g++ -o resistor_total main.cpp
+./resistor_total
 ```
 
 ---
 
 ## README (Bahasa Indonesia)
 
-### Kalkulator Hukum Ohm – Program Konsol C++
+### Kalkulator Total Tiga Resistor – Program Konsol C++
 
-Program konsol sederhana ini membantu menghitung salah satu dari tiga besaran dasar listrik pada Hukum Ohm:
+Program konsol ini menghitung total hambatan dari tiga resistor dengan sambungan **seri** atau **paralel**.
 
-* **Tegangan (V)**
-* **Arus (I)**
-* **Hambatan (R)**
+### Rumus
 
-dengan rumus klasik:
+* **Seri**:
 
-```
-V = I × R
-```
+  ```
+  R_total = R1 + R2 + R3
+  ```
+* **Paralel**:
+
+  ```
+  1/R_total = 1/R1 + 1/R2 + 1/R3
+  ```
 
 ### Cara Menggunakan
 
 1. Jalankan program.
-2. Pilih besaran yang ingin dihitung:
+2. Masukkan tiga nilai resistor (R1, R2, R3) dalam satuan ohm.
+3. Pilih mode:
 
-   * 1 → Tegangan (V)
-   * 2 → Arus (I)
-   * 3 → Hambatan (R)
-3. Masukkan dua nilai yang sudah diketahui saat diminta.
-4. Program akan menampilkan hasil perhitungan.
+   * `1` → Seri
+   * `2` → Paralel
+4. Program akan menampilkan total hambatan.
 
 ### Kebutuhan
 
-* Kompiler C++ (misal: g++, clang++, MSVC)
-* Sistem operasi apa pun yang mendukung toolchain C++
+* Kompiler C++ (g++, clang++, MSVC, dll.)
+* Sistem operasi yang mendukung toolchain C++
 
 ### Kompilasi & Jalankan
 
 ```bash
-g++ -o kalkulator_ohm main.cpp
-./kalkulator_ohm
+g++ -o total_resistor main.cpp
+./total_resistor
 ```
 
 ---
 
-Drop this file as `README.md` in your GitHub repository.
+Save as `README.md` in the GitHub repository.
